@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Conversion </title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="descricao">
+    <h1> Celsius to Fahrenheit</h1>
+    <button class="botaoKel" onclick="abrirKel()">Kelvin</button>
+    <button class="botaoRea" onclick="abrirRea()">Réaumur</button>
+    <button class="botaoRan" onclick="abrirRan()">Rankine</button>
+    <button onclick="abrirFah()">Fahrenheit</button>
+  </div>
+
+
+  <div class="container">
+    <div class="input_box">
+      <label for="celsius">Celsius</label>
+      <input type="number" id="celsius" oninput="celToFar(),celToRea(),celToKel(),celToRan()" placeholder="value">
+    </div>
+
+    <div class="input_box Fah">
+      <label for="fahrenheit">Fahrenheit</label>
+      <input type="number" id="fahrenheit" oninput="farToCel()" placeholder="value">
+    </div>
+
+    <div class="input_box Rea">
+      <label for="reaumur">Réaumur</label>
+      <input type="number" id="reaumur" oninput="celToRea()" placeholder="value">
+    </div>
+
+    <div class="input_box Kel">
+      <label for="kelvin">Kelvin</label>
+      <input type="number" id="kelvin" oninput="celToKel()" placeholder="value">
+    </div>
+
+    <div class="input_box Ran">
+      <label for="rankine">Rankine</label>
+      <input type="number" id="rankine" oninput="celToaRan()" placeholder="value">
+    </div>
+  </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>
